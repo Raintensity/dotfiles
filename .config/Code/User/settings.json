@@ -1,0 +1,84 @@
+{
+	/* Telemetry and Auto-update */
+	"telemetry.telemetryLevel": "off",
+	"update.mode": "none",
+	"update.enableWindowsBackgroundUpdates": false,
+	"update.showReleaseNotes": false,
+	"extensions.autoCheckUpdates": false,
+	"extensions.autoUpdate": false,
+	"extensions.ignoreRecommendations": true,
+	"workbench.enableExperiments": false,
+	"json.schemaDownload.enable": false,
+	"npm.fetchOnlinePackageInfo": false,
+	"workbench.settings.enableNaturalLanguageSearch": false,
+	"settingsSync.keybindingsPerPlatform": false,
+
+	/* General */
+	"editor.minimap.enabled": true,
+	"editor.roundedSelection": false,
+	"editor.scrollBeyondLastLine": false,
+	"breadcrumbs.enabled": false,
+	"window.zoomLevel": 0,
+	"workbench.editor.untitled.hint": "hidden",
+	"workbench.startupEditor": "newUntitledFile",
+
+	/* Editor */
+	"editor.insertSpaces": false,
+	"editor.copyWithSyntaxHighlighting": false,
+	"html.format.endWithNewline": true,
+	"html.format.wrapLineLength": 0,
+	"html.format.enable": false,
+	"json.format.enable": false,
+
+	/* Lint */
+	"css.lint.validProperties": [
+		"content-visibility",
+		"contain-intrinsic-size"
+	],
+
+	/* Formatter */
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+
+	/* Emmet */
+	"emmet.syntaxProfiles": {
+		"html": {
+			"indent": ""
+		}
+	},
+	"emmet.variables": {
+		"lang": "ja"
+	},
+
+	/* Latex */
+	"latex-workshop.latex.tools": [
+		{
+			"name": "ptex2pdf",
+			"command": "ptex2pdf",
+			"args": ["-l", "-u", "-ot", "-kanji=utf8 -synctex=1", "%DOC%"],
+			"env": {}
+		}
+	],
+	"latex-workshop.latex.recipes": [
+		{
+			"name": "upLaTeX (ptex2pdf)",
+			"tools": ["ptex2pdf", "ptex2pdf"]
+		}
+	],
+	"latex-workshop.latex.magic.args": [
+		"-f", "-gg", "-pv", "-synctex=1", "-interaction=nonstopmode",
+		"-file-line-error", "%DOC%"
+	],
+	"latex-workshop.latex.clean.fileTypes": [
+		"*.aux", "*.bbl", "*.blg", "*.idx", "*.ind",
+		"*.lof", "*.lot", "*.out", "*.toc", "*.acn",
+		"*.acr", "*.alg", "*.glg", "*.glo", "*.gls",
+		"*.ist", "*.fls", "*.log", "*.fdb_latexmk", "*.synctex.gz",
+		"_minted*", "*.nav", "*.snm", "*.vrb"
+	],
+	"latex-workshop.view.pdf.viewer": "tab",
+	"latex-workshop.latex.autoClean.run": "onBuilt"
+}
